@@ -17,7 +17,7 @@
 - src: geerlingguy.php
 
 # composer
-- src: kosssi.composer
+- src: geerlingguy.composer
 
 # Postfix
 - src: Stouts.postfix

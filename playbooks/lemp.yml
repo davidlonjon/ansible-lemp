@@ -12,6 +12,6 @@
     - role: geerlingguy.php
     - role: kosssi.php
     - role: geerlingguy.nginx
-    - role: kosssi.composer
+    - role: geerlingguy.composer
     - role: Stouts.postfix
     - role: Stouts.nodejs

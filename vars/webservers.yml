@@ -39,15 +39,10 @@ php_expose_php: "On"
 php_repository: ppa:ondrej/php5-5.6
 
 # Composer setup
-composer_path_env: true
-composer_home_path: /opt/composer
+composer_path: /usr/local/bin/composer
+composer_home_path: '~/.composer'
 composer_home_owner: vagrant
 composer_home_group: vagrant
-composer_global_packages:
-  phpunit/phpunit: "5.2.*"
-  phing/phing: "2.*"
-  squizlabs/php_codesniffer: "*"
-  wp-cli/wp-cli: "*"
 
 # Nodejs setup
 nodejs_enabled: yes                       # The role is enabled
