@@ -7,11 +7,11 @@
     - ../vars/webservers.yml
     - ../vars/dbservers.yml
   roles:
-    # - role: ANXS.mysql
+    - role: ANXS.mysql
     - role: geerlingguy.php
-    # - role: kosssi.php
+    - role: kosssi.php
     - role: geerlingguy.nginx
-    # - role: kosssi.composer
-    # - role: Stouts.postfix
-    # - role: Stouts.nodejs
-# - include: server_bootstrap.yml
+    - role: kosssi.composer
+    - role: Stouts.postfix
+    - role: Stouts.nodejs
+- include: server_bootstrap.yml
