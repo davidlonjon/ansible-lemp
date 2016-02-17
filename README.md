@@ -1,6 +1,6 @@
-# Ansible LEMP setup for Vagrant
+# Ansible LEMP setup
 
-Allows to setup a lamp server using ansible. This is for development machine (on vagrant for example) only.
+Allows to setup a LEMP server using Ansible. This is for development machine (on vagrant for example) only.
 
 It will install:
 
