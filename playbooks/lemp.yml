@@ -10,7 +10,7 @@
   roles:
     - role: ANXS.mysql
     - role: geerlingguy.php
-    - role: kosssi.php
+    - role: kosssi.php # Used to upgrade php to v5.6
     - role: geerlingguy.nginx
     - role: geerlingguy.composer
     - role: Stouts.postfix
