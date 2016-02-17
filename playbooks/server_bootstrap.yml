@@ -1,0 +1,10 @@
+---
+- hosts: dev
+  become: yes
+  become_method: sudo
+  remote_user: vagrant
+  roles:
+    - role: bootstrap
+    - role: resmo.ntp
+    - role: Stouts.timezone
+    - role: tersmitten.locales

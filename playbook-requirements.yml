@@ -1,0 +1,29 @@
+# Ntp
+- src: resmo.ntp
+
+# timezone
+- src: Stouts.timezone
+
+# locale
+- src: tersmitten.locales
+
+# nginx
+- src: geerlingguy.nginx
+
+# apache
+- src: ANXS.mysql
+
+# php
+- src: geerlingguy.php
+
+# composer
+- src: kosssi.composer
+
+# Postfix
+- src: Stouts.postfix
+
+# Nodejs and module
+- src: Stouts.nodejs
+
+# Ohmyzsh
+- src: opdavies.oh-my-zsh

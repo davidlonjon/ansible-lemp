@@ -1,0 +1,17 @@
+---
+- hosts: webservers
+  become: yes
+  become_method: sudo
+  remote_user: vagrant
+  vars_files:
+    - ../vars/webservers.yml
+    - ../vars/dbservers.yml
+  roles:
+    # - role: ANXS.mysql
+    - role: geerlingguy.php
+    # - role: kosssi.php
+    - role: geerlingguy.nginx
+    # - role: kosssi.composer
+    # - role: Stouts.postfix
+    # - role: Stouts.nodejs
+# - include: server_bootstrap.yml
