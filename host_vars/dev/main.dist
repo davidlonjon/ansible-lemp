@@ -15,6 +15,12 @@ postfix_relayhost: "smtp.server.com"
 postfix_smtp_sasl_user: username
 postfix_smtp_sasl_password: xxxxxxx
 
+curl_global_packages:
+  - { url: "https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar", destination: "/usr/local/bin/wp" }
+  - { url: "https://phar.phpunit.de/phpunit.phar", destination: "/usr/local/bin/phpunit" }
+  - { url: "https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar", destination: "/usr/local/bin/phpcs" }
+  - { url: "http://www.phing.info/get/phing-latest.phar", destination: "/usr/local/bin/phing" }
+
 # Nginx virtual hosts setup (optional)
 nginx_vhosts:
   - listen: "80 default_server"
