@@ -42,5 +42,5 @@ sftp-config.json
 # Ansible
 inventory/hosts
 roles/vendors
-host_vars/dev/main.yml
-
+host_vars/
+!host_vars/dev/main.yml
