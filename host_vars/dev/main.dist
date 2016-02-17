@@ -4,9 +4,34 @@ add_build_essential: true
 ntp_config_server: [asia.pool.ntp.org]
 locales_present: [en_US.UTF-8]
 timezone_timezone: Asia/Seoul
+
+# oh-my-zsh setup
+ohmyzsh_copy_zshrc: true
+ohmyzsh_change_shell: true
+ohmyzsh_users: ['vagrant']
+
+# Postfix setup
 postfix_relayhost: "smtp.server.com"
 postfix_smtp_sasl_user: username
 postfix_smtp_sasl_password: xxxxxxx
+
+# Nginx virtual hosts setup (optional)
+nginx_vhosts:
+  - listen: "80 default_server"
+    server_name: "mydomain.dev"
+    root: "/path/to/root/"
+    index: "index.php index.html index.htm"
+    access_log: "/path/to/logs/mydomain.dev_access.log"
+    error_log: "/path/to/logs/mydomain.dev_error.log"
+    extra_parameters: |
+      location ~ \.php$ {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass unix:/var/run/php5-fpm.sock;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+      }
+nginx_remove_default_vhost: true
 
 # List of databases to be created (optional)
 mysql_databases:
