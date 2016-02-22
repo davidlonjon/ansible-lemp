@@ -2,6 +2,7 @@
 - name: install necessary base packages
   apt: name={{ item }} state=latest update_cache=true
   with_items:
+    - autojump # self-learning directory changer
     - tmux # terminal multiplexer
     - mosh  # mobile shell
     - git # Version control
